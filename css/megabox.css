@@ -1,0 +1,59 @@
+
+*{
+  margin:0;
+  padding:0;
+  border:1px solid black;
+  color:white;
+}
+header{
+  height: 91px;
+  background-color:darkred;
+}
+nav{
+  background-color:darkslateblue;
+}
+main{
+  background-color: black;
+}
+nav ul, header div ul{
+  display: flex;
+  flex:row;
+}
+li{
+  list-style-type: none;
+}
+footer{
+  height:200px;
+  background-color: darkolivegreen;
+}
+
+.add{
+  height:80px;
+  background-color: aquamarine;
+  color: black;
+  text-align: center;
+}
+
+.div--panel{
+  width:1100px;
+  height:100%;
+  margin:auto;
+  background-color: darkgray; opacity : 0.5;
+}
+
+.section--box-office{
+  height:830px;
+  background-color: darkslategray;
+}
+
+.section--curation{
+  height:830px;
+  background-color:indigo;
+
+}
+
+.section--mega-info{
+  height:630px;
+  background-color: dimgray;
+
+}
