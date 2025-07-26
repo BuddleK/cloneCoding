@@ -5,20 +5,53 @@
   border:1px solid black;
   color:white;
 }
+section{
+  display: flex;
+}
 header{
-  height: 91px;
+  height: 45px;
   background-color:darkred;
+  display: flex;
+  justify-content: center;
+}
+.header-container{
+  width:1100px;
+  height:100%;
+  margin:auto;
+  background-color: darkgray; opacity : 0.5;
+  display: flex;
+
+  /* 수평중앙정렬 (건드리지 말기) */
+  align-items: center;
+}
+.nav-container{
+  width:1100px;
+  height:100%;
+  margin:auto;
+  background-color: darkgray; opacity : 0.5;
+  display: flex;
+  justify-content: space-between;
 }
 nav{
+  display: flex;
+  justify-content: space-between;
+  height:45px;
   background-color:darkslateblue;
+}
+div{
+
 }
 main{
   background-color: black;
 }
-nav ul, header div ul{
-  display: flex;
-  flex:row;
+span{
+  background-color:darkolivegreen;
 }
+header div span ul, nav div ul{
+  display: flex;
+  justify-content: center;
+}
+
 li{
   list-style-type: none;
 }
@@ -33,25 +66,40 @@ footer{
   color: black;
   text-align: center;
 }
-
+.bo-main--rank-poster{
+  width: 245px;
+  height: 352px;
+}
+.bo-main--rank-container{
+  display: flex;
+  justify-content: space-between;
+}
+.bo-main--menu-container{
+  display: flex;
+}
+.bo-main--menu{
+  flex: 1;
+  text-align: center;
+}
+.bo-bottom{
+  display: flex;
+  justify-content: center;
+}
 .div--panel{
   width:1100px;
   height:100%;
   margin:auto;
   background-color: darkgray; opacity : 0.5;
 }
-
 .section--box-office{
   height:830px;
   background-color: darkslategray;
 }
-
 .section--curation{
   height:830px;
   background-color:indigo;
 
 }
-
 .section--mega-info{
   height:630px;
   background-color: dimgray;
