@@ -11,50 +11,51 @@
 <body>
   <div class="add">광고(위치 맞추기 용)</div>
   <header>
-    <img src="./../img/logo.png" style="position: absolute; ">
-    <div class="header-container">
-      <span>
-        <ul>
-          <li><a href="#">VIP LOUNGE</a></li>
-          <li><a href="#">멤버십</a></li>
-          <li><a href="#">고객센터</a></li>
-        </ul>
-      </span>
-      <span style="flex:1; ">
-      </span>
-      <span>
-        <ul>
-          <li><a href="#">로그인</a></li>
-          <li><a href="#">회원가입</a></li>
-          <li><a href="#">빠른 예매</a></li>
-        </ul>
-      </span>
-    </div>
+
+      <div class="header-container">
+        <img src="./../img/logo.png" style="position: absolute; top:50% ">
+        <span>
+          <ul style="display: flex;justify-content: center;">
+            <li><a href="#">VIP LOUNGE</a></li>
+            <li><a href="#">멤버십</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </span>
+        <span style="flex:1; ">
+        </span>
+        <span>
+          <ul style="display: flex;justify-content: center;">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">빠른 예매</a></li>
+         </ul>
+        </span>
+      </div>
 
   </header>
   <nav>
     <div class="nav-container">
-      <ul>
+      <ul style="display: flex;justify-content: center;">
         <li>
           <a href="">네비1</a>
           <a href="">네비2</a>
         </li>
       </ul>
-      <ul>
+      <ul style="display: flex;justify-content: center;">
         <li style="position: absolute; ">
           <a href="">영화</a>
           <a href="">예매</a>
           <a href="">극장</a>
         </li>
       </ul>
-      <ul>
+      <ul style="display: flex;justify-content: center;">
         <li style="position: absolute; ">
           <a href="">이벤트</a>
           <a href="">스토어</a>
           <a href="">혜택</a>
         </li>
       </ul>
-      <ul>
+      <ul style="display: flex;justify-content: center;">
         <li>
           <a href="">네비1</a>
           <a href="">네비2</a>
@@ -64,10 +65,13 @@
     </div>
   </nav>
   <main>
-    <section class="section--box-office">
-      <div class="div--panel">
-        <div style="height: 120px;">
-          <!-- 헤드 -->
+    <div class="section--box-office">
+      <div class="div--panel"> <!-- 판넬 -->
+
+
+
+        <div style="height: 120px;"> <!-- 헤드 -->
+
 
 
           <div style="margin-top: 79px; background-color:crimson; ">
@@ -91,105 +95,209 @@
 
 
 
-        </div>
-        <!-- 헤드 끝 -->
-        <!-- 랭킹 시작 -->
-        <div>
-          <div>
+        </div> <!-- 헤드 끝 -->
+
+        <div><!-- 랭킹 시작 -->
+          <div> <!--의미 없는 div 시작-->
+
             <ul class="bo-main--rank-container">
               <li>
                 <span style="background-color: blueviolet;">
-                  <img class="bo-main--rank-poster" src="./../img/orv.jpg">
+                  <img class="bo-main--rank-poster" src="./../img/bo-img/orv.jpg">
                   <div>
                     <sapn>
                       좋아요
+                    </span>
+                    <span>
+                      예매버튼
+                    </span>
+                  </div>
                 </span>
-                <sapn>
-                  예매버튼
-                  </span>
-                  </span>
               </li>
               <li>
                 <span style="background-color: blueviolet;">
-                  <img class="bo-main--rank-poster" src="./../img/orv.jpg">
+                  <img class="bo-main--rank-poster" src="./../img/bo-img/orv.jpg">
                   <div>
                     <sapn>
                       좋아요
+                    </span>
+                    <span>
+                      예매버튼
+                    </span>
+                  </div>
                 </span>
-                <sapn>
-                  예매버튼
-                  </span>
+              </li>
+              <li>
+                <span style="background-color: blueviolet;">
+                  <img class="bo-main--rank-poster" src="./../img/bo-img/orv.jpg">
+                  <div>
+                    <sapn>
+                      좋아요
+                    </span>
+                    <span>
+                      예매버튼
+                    </span>
+                  </div>
+                </span>
+              </li>
+              <li>
+                <span style="background-color: blueviolet;">
+                  <img class="bo-main--rank-poster" src="./../img/bo-img/orv.jpg">
+                  <div>
+                    <sapn>
+                      좋아요
+                    </span>
+                    <span>
+                      예매버튼
+                    </span>
+                  </div>
+                </span>
+              </li>
 
+            </ul>
+
+          </div> <!--의미 없는 div 끝-->
+        </div> <!-- 랭킹 끝 -->
+
+      
+        <div><!-- 메뉴 시작 -->
+          <div>
+            <ul class="bo-main--menu-container">
+              <li class="bo-main--menu">
+                검색
+              </li>
+              <li class="bo-main--menu">
+                상영시간표
+              </li>
+              <li class="bo-main--menu">
+                박스오피스
+              </li>
+              <li class="bo-main--menu">
+                빠른 예매
+              </li>
+            </ul>
           </div>
-          </span>
+        </div><!-- 메뉴 끝 -->
 
-          </li>
-          <li>
-            <span>
-              <img class="bo-main--rank-poster" src="./../img/orv.jpg">
-              <div>
-                <sapn>
-                  좋아요
-            </span>
-            <sapn>
-              예매버튼
-              </span>
-              </span>
 
-          </li>
-          <li>
-            <span>
-              <img class="bo-main--rank-poster" src="./../img/orv.jpg">
-              <div>
-                <sapn>
-                  좋아요
-            </span>
-            <sapn>
-              예매버튼
-              </span>
-              </span>
 
-          </li>
-          </ul>
+        
+        <div class="bo-bottom">
+          <img src="./../img/bo-img/ico-mouse.png">
         </div>
-      </div>
-      <!-- 랭킹 끝 -->
-      <!-- 메뉴 시작 -->
-      <div>
-        <div>
-          <ul class="bo-main--menu-container">
-            <li class="bo-main--menu">
-              검색
-            </li>
-            <li class="bo-main--menu">
-              상영시간표
-            </li>
-            <li class="bo-main--menu">
-              박스오피스
-            </li>
-            <li class="bo-main--menu">
-              빠른 예매
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- 메뉴 끝 -->
-      <div class="bo-bottom">
-        <img src="./../img/ico-mouse.png">
-      </div>
-      </div>
-    </section>
-    <section class="section--curation">
-      <div class="div--panel">큐레이션 판넬
+
+      </div> <!-- 판넬 -->
+
+    </div>
+    <div class="section--curation">
+      <div class="div--panel">
         <div style="height: 123px;">
+
+
+
           <!-- 헤드 -->
-
-
-          <div style="margin-top: 79px; background-color:crimson; display: flex; justify-content: space-between; align-items: center;">
-
-
-            <p style="font-size: 30px;">큐레이션</p>
+          <div
+            style="margin-top: 79px; background-color:crimson; display: flex; justify-content: space-between; align-items: center;">
+            <p style="font-size: 25px;">큐레이션</p>
             <a href="#"><span></span>큐레이션 더보기<span> +</span></a>
+          </div>
+
+          
+
+          <!-- 필름 소사어티 -->
+          <div style="display: flex;  position: relative; background-color: black;">
+
+            <!-- 깃발 -->
+            <div style="position:absolute; top:-10px; background-color: yellow;">
+              <img src="./../img/curation-img/bg-bage-curation-film.png">
+            </div>
+
+            
+            <ul style="display: flex; flex: 1; justify-content: space-between; background-color: brown;">
+              <li>
+                <span style="background-color: blue; display: flex; ">
+                  <div style="background-color: brown; width: fit-content;">
+                    <img src="./../img/curation-img/moving_poster.jpg" style="width: 300px; height:430px;">
+                    <div style="width: 100%; background-color: aqua; display: block;">
+                      <span>
+                        상세정보
+                      </span>
+                      <span>
+                        예매
+                      </span>
+                    </div>
+                  </div>
+                </span>
+
+              </li>
+              <li style="flex: 1; background-color: antiquewhite;">
+                <span style="flex: 1; background-color: aqua;">
+                  <div style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+                    <p>#필름소사이어티</p>
+                    <p style="font-size: 30px;">이사</p>
+                    <p>화목한 가정을 자부하던 6학년 소녀 렌</p>
+                    <br>
+                    <p>어느 날 아빠가 집을 나가고 엄마가 이혼을 선언했다.</p>
+                    <p>"나는 엄마 아빠가 싸워도 참았어</p>
+                    <p>근데 왜 엄마 아빠는 못 참는 거야?"</p>
+                    <br>
+                    <p>엄마가 만든 '둘을 위한 계약서'도 싫고</p>
+                    <ul class="cu-fs--film--container">
+                      <li style="position: relative;">
+                        <div style="position:absolute; top:-5px; left: 10px; background-color: yellow;">
+                          <img src="./../img/curation-img/bg-bage-curation-film-m.png">
+                        </div>
+                        <span>
+                          <img src="./../img/curation-img/f_m.jpg" style="width: 170px; height: 244px;">
+                          <div style="text-align: center;">
+                            제목
+                          </div>
+                        </span>
+                      </li>
+                      <li style="position: relative;">
+                        <div style="position:absolute; top:-5px; left: 10px; background-color: yellow;">
+                          <img src="./../img/curation-img/bg-bage-curation-film-m.png">
+                        </div>
+                        <span>
+                          <img src="./../img/curation-img/f_s.jpg" style="width: 170px; height: 244px;">
+                          <div style="text-align: center;">
+                            제목
+                          </div>
+                        </span>
+                      </li>
+                      <li style="position: relative;">
+                        <div style="position:absolute; top:-5px; left: 10px; background-color: yellow;">
+                          <img src="./../img/curation-img/bg-bage-curation-film-m.png">
+                        </div>
+                        <span>
+                          <img src="./../img/curation-img/f_v.jpg" style="width: 170px; height: 244px;">
+                          <div style="text-align: center;">
+                            제목
+                          </div>
+                        </span>
+                      </li>
+                      <li style="position: relative;">
+                        <div style="position:absolute; top:-5px; left: 10px; background-color: yellow;">
+                          <img src="./../img/curation-img/bg-bage-curation-film-m.png">
+                        </div>
+                        <span>
+                          <img src="./../img/curation-img/f_b.jpg" style="width: 170px; height: 244px;">
+                          <div style="text-align: center;">
+                            제목
+                          </div>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </span>
+              </li>
+            </ul>
+
+
+
+              
+
+
 
 
           </div>
@@ -197,17 +305,247 @@
 
 
 
+
+
+
         </div>
+                  <div style="width: 100%;">
+                    더미더미
+                  </div>
 
       </div>
-    </section>
+    </div>
     <section class="section--mega-info">
-      <div class="div--panel">메가박스 안내 판넬
+      <div class="div--panel">
+        <!-- 헤드 -->
+          <div
+            style="margin-top: 79px; background-color:crimson; ">
+            <p style="font-size: 25px;">메가박스 안내</p>
+          </div>
+          
+          <div> <!--의미 없는 div 시작-->
+
+            <ul class="mi-main--introduce-container">
+              <li class="">
+                <div class="introduce">
+                  <img class="introduce-img" src="./../img/info-img/bg-main-boutiq.png">
+                </div>
+              </li>
+              <li>
+                <div class="introduce">
+                  <img class="introduce-img" src="./../img/info-img/bg-main-boutiq.png">
+                </div>
+              </li>
+              <li>
+                <div class="introduce">
+                  <img class="introduce-img" src="./../img/info-img/bg-main-boutiq.png">
+                </div>
+              </li>
+              <li>
+                <div class="introduce">
+                  <img class="introduce-img" src="./../img/info-img/bg-main-boutiq.png">
+                </div>
+              </li>
+              <li>
+                <div class="introduce">
+                  <img class="introduce-img" src="./../img/info-img/bg-main-boutiq.png">
+                </div>
+              </li>
+              <li>
+                <div class="introduce">
+                  <img class="introduce-img" src="./../img/info-img/bg-main-boutiq.png">
+                </div>
+              </li>
+              <li>
+                <div class="introduce">
+                  <img class="introduce-img" src="./../img/info-img/bg-main-boutiq.png">
+                </div>
+              </li>
+              <li>
+                <div class="introduce">
+                  <img class="introduce-img" src="./../img/info-img/bg-main-boutiq.png">
+                </div>
+              </li>
+
+            </ul>
+
+          </div> <!--의미 없는 div 끝-->
+
+          <div class="info-notice">
+            
+            <div>
+              <a href="#">
+                메가박스
+              </a>
+              <a href="#">
+                [공지] 2025년 발레리나 빵원티켓플럿 일정 변경 안내
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                날짜
+              </a>
+              <a href="#">
+                더보기
+              </a>
+            </div>
+          </div>
+          
+          <div> <!--의미 없는 div 시작-->
+
+            <ul class="info--ask-containter">
+              <li class="ask">
+                <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;" href="#">
+                  <div style="justify-content: center; display: flex;">
+                    <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
+                  </div>
+                  자주 묻는 질문
+                </a>
+              </li>
+              <li class="ask">
+                <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;" href="#">
+                  <div style="justify-content: center; display: flex;">
+                    <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
+                  </div>
+                  자주 묻는 질문
+                </a>
+              </li>
+              <li class="ask">
+                <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;" href="#">
+                  <div style="justify-content: center; display: flex;">
+                    <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
+                  </div>
+                  자주 묻는 질문
+                </a>
+              </li>
+              <li class="ask">
+                <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;" href="#">
+                  <div style="justify-content: center; display: flex;">
+                    <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
+                  </div>
+                  자주 묻는 질문
+                </a>
+              </li>
+              <li class="ask">
+                <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;" href="#">
+                  <div style="justify-content: center; display: flex;">
+                    <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
+                  </div>
+                  자주 묻는 질문
+                </a>
+              </li>
+              <li class="ask">
+                <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;" href="#">
+                  <div style="justify-content: center; display: flex;">
+                    <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
+                  </div>
+                  자주 묻는 질문
+                </a>
+              </li>
+
+            </ul>
+
+          </div> <!--의미 없는 div 끝-->
+
+
 
       </div>
     </section>
   </main>
-  <footer>푸터.
+  <footer>
+    <div class="div--panel">
+
+    
+
+      <div class="info-notice">
+              
+        <div>
+          <a href="#">
+            회사소개
+          </a>
+          <a href="#">
+            인재채용
+          </a>
+          <a href="#">
+            사회공헌
+          </a>
+          <a href="#">
+            제휴/광고/부대사업문의
+          </a>
+          <a href="#">
+            이용약관
+          </a>
+          <a href="#">
+            위치기반서비스 이용약관
+          </a>
+          <a href="#">
+            개인정보처리방침
+          </a>
+          <a href="#">
+            윤리경영
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            극장 찾기
+          </a>
+        </div>
+      </div>
+
+
+      <div class="footer-bottom">
+        <div>
+          <img src="./../img/footer-icon-img/logo-opacity_new2.png">
+        </div>
+              
+        <div>
+          <div style="display: inline-block;">
+            <p>
+              서울특별시 강남구 테헤란로 87길 22 도심공항터미널 건물 408호
+            </p>
+            <p>
+              ARS 1544-0070 대표이메일 m.dreamcenter@partner.megabox.co.kr
+            </p>
+          </div>
+          <div>
+            <p>
+              대표자명 홍정인, 남용석
+            </p>
+            <p>
+              · 개인정보보호책임자 김수현
+            </p>
+            <p>
+              · 사업자등록번호 211-86-59478
+            </p>
+            <p>
+              · 통신판매업신고번호 2025-서울강남-00722
+            </p>
+          </div>
+          <p style="font-size: 10px;">
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+          </p>
+        </div>
+        <div style="display: flex;height: fit-content;">
+          <a href="#">
+            <img src="./../img/footer-icon-img/ico-youtubeN.png">
+          </a>
+          <a href="#">
+            <img src="./../img/footer-icon-img/ico-instagramN.png">
+          </a>
+          <a href="#">
+            <img src="./../img/footer-icon-img/ico-facebookN.png">
+          </a>
+          <a href="#">
+            <img src="./../img/footer-icon-img/ico-twitterN.png">
+          </a>
+        </div>
+      </div>
+
+
+
+
+    </div>
   </footer>
 </body>
 

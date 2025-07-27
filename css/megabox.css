@@ -8,11 +8,9 @@
 section{
   display: flex;
 }
-header{
+header {
   height: 45px;
   background-color:darkred;
-  display: flex;
-  justify-content: center;
 }
 .header-container{
   width:1100px;
@@ -20,6 +18,8 @@ header{
   margin:auto;
   background-color: darkgray; opacity : 0.5;
   display: flex;
+  position: relative;
+  justify-content: center;
 
   /* 수평중앙정렬 (건드리지 말기) */
   align-items: center;
@@ -33,13 +33,11 @@ header{
   justify-content: space-between;
 }
 nav{
-  display: flex;
-  justify-content: space-between;
   height:45px;
   background-color:darkslateblue;
 }
 div{
-
+  overflow: visible;
 }
 main{
   background-color: black;
@@ -47,9 +45,8 @@ main{
 span{
   background-color:darkolivegreen;
 }
-header div span ul, nav div ul{
-  display: flex;
-  justify-content: center;
+header div div span ul, nav div div ul{
+  
 }
 
 li{
@@ -85,7 +82,69 @@ footer{
   display: flex;
   justify-content: center;
 }
+.cu-fs--film--container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.mi-main--introduce-container{
+  display: flex;  overflow: hidden;
+}
+.introduce{
+  position: relative; width: 170px; height: 170px; overflow: hidden;
+  border-radius: 10px;
+}
+.introduce-img{
+  width: 100%;
+  height: 200%;
+
+}
+.introduce-img:hover{
+  top:-100%;
+  position: absolute;
+}
+
+.info-notice{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 79px;
+  background-color:crimson;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info--ask-containter{
+  width: 100%;
+  display: flex;  overflow: hidden;
+  justify-content: space-around;
+}
+.ask{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+.ask a{
+  text-decoration-line: none;
+}
+.ask a:hover{
+  text-decoration-line: underline;
+}
+.ask-img{
+  background-color: black;
+}
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom div{
+}
+.footer-bottom div div p{
+  width: fit-content;
+  font-size: 10px;
+  display: inline-block;
+}
 .div--panel{
+  
   width:1100px;
   height:100%;
   margin:auto;
