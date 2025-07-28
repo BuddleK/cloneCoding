@@ -1,22 +1,31 @@
-
 *{
   margin:0;
   padding:0;
   border:1px solid black;
   color:white;
 }
-section{
-  display: flex;
-}
+/* 헤더 */
 header {
   height: 45px;
   background-color:darkred;
+}
+.header-logo-img{
+  position: absolute;
+  top:50%;
+}
+.header-go{
+  display: flex;
+  justify-content: center;
+}
+.header-pad{
+  flex:1;
 }
 .header-container{
   width:1100px;
   height:100%;
   margin:auto;
-  background-color: darkgray; opacity : 0.5;
+  background-color: darkgray;
+  opacity : 0.5;
   display: flex;
   position: relative;
   justify-content: center;
@@ -24,44 +33,61 @@ header {
   /* 수평중앙정렬 (건드리지 말기) */
   align-items: center;
 }
+/* 네비게이션 */
 .nav-container{
   width:1100px;
   height:100%;
   margin:auto;
-  background-color: darkgray; opacity : 0.5;
+  background-color: darkgray;
+  opacity : 0.5;
   display: flex;
   justify-content: space-between;
 }
-nav{
-  height:45px;
-  background-color:darkslateblue;
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-div{
-  overflow: visible;
+.nav-go{
+  position: absolute;
 }
-main{
+/* cu - 큐레이션 */
+.cu-title-head{
+  margin-top: 79px;
+  background-color:crimson;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cu-fs{
+  display: flex;
+  position: relative;
   background-color: black;
 }
-span{
-  background-color:darkolivegreen;
+.cu-flag-img{
+  position:absolute;
+  top:-10px;
+  background-color: yellow;
 }
-header div div span ul, nav div div ul{
-  
+.cu-fs ul{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  background-color: brown;
 }
+.cu-fs--film--container{
+  display: flex;
+  justify-content: space-between;
 
-li{
-  list-style-type: none;
 }
-footer{
-  height:200px;
-  background-color: darkolivegreen;
-}
-
-.add{
-  height:80px;
-  background-color: aquamarine;
-  color: black;
-  text-align: center;
+/* 박스오피스 */
+.bo-title-head{
+  background-color: aqua;
+  opacity: 0.3;
+  position: absolute;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
 }
 .bo-main--rank-poster{
   width: 245px;
@@ -82,28 +108,29 @@ footer{
   display: flex;
   justify-content: center;
 }
-.cu-fs--film--container{
-  display: flex;
-  justify-content: space-between;
-
-}
+/* 메가박스 인포 */
 .mi-main--introduce-container{
-  display: flex;  overflow: hidden;
+  /* display: none; */
+  display: flex;
+  overflow: hidden;
 }
+/* 서비스 소개 */
 .introduce{
-  position: relative; width: 170px; height: 170px; overflow: hidden;
+  position: relative;
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
   border-radius: 10px;
 }
 .introduce-img{
   width: 100%;
   height: 200%;
-
 }
 .introduce-img:hover{
   top:-100%;
   position: absolute;
 }
-
+/* 공지 */
 .info-notice{
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -113,9 +140,11 @@ footer{
   justify-content: space-between;
   align-items: center;
 }
+/* 고객문의 */
 .info--ask-containter{
   width: 100%;
-  display: flex;  overflow: hidden;
+  display: flex; 
+  overflow: hidden;
   justify-content: space-around;
 }
 .ask{
@@ -132,23 +161,29 @@ footer{
 .ask-img{
   background-color: black;
 }
+/* 푸터 */
 .footer-bottom{
   display: flex;
   justify-content: space-between;
-}
-.footer-bottom div{
 }
 .footer-bottom div div p{
   width: fit-content;
   font-size: 10px;
   display: inline-block;
 }
+/* 각종 설정 */
 .div--panel{
-  
   width:1100px;
   height:100%;
   margin:auto;
-  background-color: darkgray; opacity : 0.5;
+  background-color: darkgray;
+  opacity : 0.5;
+}
+.div--panel--site-map{
+  width:1100px;
+  height:100%;
+  margin:auto;
+  background-color: aqua;
 }
 .section--box-office{
   height:830px;
@@ -157,10 +192,81 @@ footer{
 .section--curation{
   height:830px;
   background-color:indigo;
-
 }
 .section--mega-info{
   height:630px;
   background-color: dimgray;
+}
+.section--site-map{
+  height:750px;
+  background-color: black;
+  display: block;
+  /* display: none; */
+}
+.section--search-theatre{
+  height:646px;
+  width: 100%;
+  background-color: black;
+  display: block;
+  /* display: none; */
+  position: absolute;
+  top:-326%;
+}
+.add{
+  /* 광고 */
+  height:80px;
+  background-color: aquamarine;
+  color: black;
+  text-align: center;
+}
+nav{
+  height:45px;
+  background-color:darkslateblue;
+}
+main{
+  background-color: black;
+}
+span{
+  background-color:darkolivegreen;
+}
 
+li{
+  list-style-type: none;
+}
+footer{
+  height:200px;
+  background-color: darkolivegreen;
+}
+span div p{
+  /* 임시 */
+  color: black;
+}
+
+.site-map--ul{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.site-map--ul li{
+  width: 159px;
+}
+.site-map--ul li p{
+  color: black;
+  text-align: center;
+}
+.site-map--ul li div div{
+  width: 159px;
+  position: absolute;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+
+}
+.site-map--ul li div div a{
+  font-size: 13px;
+}
+
+.cccc{
+  fl;
 }
