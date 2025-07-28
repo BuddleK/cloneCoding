@@ -12,12 +12,12 @@
 
 
 
-  <div class="add">광고(위치 맞추기 용)</div>
+  <!-- <div class="add">광고(위치 맞추기 용)</div> -->
   <header>
     <div class="header-container">
       <img src="./../img/header-img/logo.png" class="header-logo-img">
       <span>
-        <ul class="header-go">
+        <ul class="header-go-left">
           <li><a href="#">VIP LOUNGE</a></li>
           <li><a href="#">멤버십</a></li>
           <li><a href="#">고객센터</a></li>
@@ -27,7 +27,7 @@
       <span class="header-pad">
       </span>
       <span>
-        <ul class="header-go">
+        <ul class="header-go-right">
           <li><a href="#">로그인</a></li>
           <li><a href="#">회원가입</a></li>
           <li><a href="#">빠른 예매</a></li>
@@ -38,9 +38,9 @@
   <nav>
     <div class="nav-container">
       <ul class="nav">
-        <li>
-          <a href=""><img src="./../img/header-img/ico-sitemap-white.png"></a>
-          <a href=""><img src="./../img/header-img/ico-search-white.png"></a>
+        <li class="nav--icon-list">
+          <a href="#" class="nav--icon"><img src="./../img/header-img/ico-sitemap-white.png"></a>
+          <a href="#" class="nav--icon"><img src="./../img/header-img/ico-search-white.png"></a>
         </li>
       </ul>
       <ul class="nav">
@@ -50,6 +50,9 @@
           <a href="">극장</a>
         </li>
       </ul>
+      <ul>
+        <!-- 요소 띄우기용 리스트 -->
+      </ul>
       <ul class="nav">
         <li class="nav-go">
           <a href="#">이벤트</a>
@@ -58,17 +61,16 @@
         </li>
       </ul>
       <ul class="nav">
-        <li style="display:flex; align-items:center;">
-          <!-- 이미지 정렬 시도. 이상함 -->
-          <a href="#"><img src="./../img/header-img/ico-schedule-white.png"></a>
-          <a href="#"><img src="./../img/header-img/ico-mymega-white.png"></a>
+        <li class="nav--icon-list">
+          <a href="#" class="nav--icon"><img src="./../img/header-img/ico-schedule-white.png"></a>
+          <a href="#" class="nav--icon"><img src="./../img/header-img/ico-mymega-white.png"></a>
         </li>
       </ul>
     </div>
   <div class="section--site-map">
-    <div class="div--panel--site-map">
+    <div class="site-map--panel">
       <div class="cu-title-head">
-        <p style="font-size: 25px;">SITEMAP</p>
+        <p class="site-map--title">SITEMAP</p>
       </div>
       <div>
         <ul class="site-map--ul">
@@ -201,7 +203,8 @@
         </ul>
       </div>
       <div>
-        <ul class="site-map--ul" style="margin-top: 150px;">
+        <div class="site-map--ul-pad"></div>
+        <ul class="site-map--ul">
           <li>
             <p>
               혜택
@@ -327,69 +330,78 @@
   <main>
     <div class="section--box-office">
       <div class="div--panel"> <!-- 판넬 -->
-        <div style="height: 120px;"> <!-- 헤드 -->
-          <div style="margin-top: 79px; background-color:crimson; ">
-            <!-- (조정 필요)텍스트 띄우는 마진 설정되어 있음 -->
-            <div class="bo-title-head">
-              <a href="#">박스오피스</a>
-            </div>
-            <div style="display: flex; justify-content: end;">
-              <a href="#"><span>더 많은 영화 보기</span><span> +</span></a>
-            </div>
+
+        <div class="bo--head">
+          <div class="bo--head-title">
+            <button>
+              박스오피스
+            </button>
           </div>
-        </div> <!-- 헤드 끝 -->
+          <div class="bo--head-other">
+             <a href="#"><span>더 많은 영화 보기</span><img src="./../img/bo-img/ico-more-cross-gray.png"></a>
+          </div>
+        </div>
+
         <div><!-- 랭킹 시작 -->
           <div> <!--의미 없는 div 시작-->
             <ul class="bo-main--rank-container">
               <li>
+                <!-- 여기 스타일 지울 예정. -->
                 <span style="background-color: blueviolet;">
                   <img class="bo-main--rank-poster" src="./../img/bo-img/orv.jpg">
-                  <div>
-                    <span>
-                      좋아요
-                    </span>
-                    <span>
-                      예매버튼
-                    </span>
+                  <div class="bo-main--rank-button-container">
+                    <button class="bo-main--rank-button-like">
+                      <div class="bo-main--rank-button-like-heart"><img class="bo-main--rank-button-like-heart-img" src="./../img/bo-img/ico-heart-toggle-main.png" ></div>
+                      851
+                    </button>
+                    <button class="bo-main--rank-button-reserve">
+                      예매
+                    </button>
                   </div>
                 </span>
               </li>
               <li>
+                <!-- 여기 스타일 지울 예정 -->
                 <span style="background-color: blueviolet;">
                   <img class="bo-main--rank-poster" src="./../img/bo-img/orv.jpg">
-                  <div>
-                    <span>
-                      좋아요
-                    </span>
-                    <span>
-                      예매버튼
-                    </span>
+                  <div class="bo-main--rank-button-container">
+                    <button class="bo-main--rank-button-like">
+                      <div class="bo-main--rank-button-like-heart"><img class="bo-main--rank-button-like-heart-img" src="./../img/bo-img/ico-heart-toggle-main.png" ></div>
+                      851
+                    </button>
+                    <button class="bo-main--rank-button-reserve">
+                      예매
+                    </button>
                   </div>
                 </span>
               </li>
               <li>
+                <!-- 지울 예정 -->
                 <span style="background-color: blueviolet;">
                   <img class="bo-main--rank-poster" src="./../img/bo-img/orv.jpg">
-                  <div>
-                    <span>
-                      좋아요
-                    </span>
-                    <span>
-                      예매버튼
-                    </span>
+                  <div class="bo-main--rank-button-container">
+                    <button class="bo-main--rank-button-like">
+                      <div class="bo-main--rank-button-like-heart"><img class="bo-main--rank-button-like-heart-img" src="./../img/bo-img/ico-heart-toggle-main.png" ></div>
+                      851
+                    </button>
+                    <button class="bo-main--rank-button-reserve">
+                      예매
+                    </button>
                   </div>
                 </span>
               </li>
               <li>
+                <!-- 지울 예정 -->
                 <span style="background-color: blueviolet;">
                   <img class="bo-main--rank-poster" src="./../img/bo-img/orv.jpg">
-                  <div>
-                    <span>
-                      좋아요
-                    </span>
-                    <span>
-                      예매버튼
-                    </span>
+                  <div class="bo-main--rank-button-container">
+                    <button class="bo-main--rank-button-like">
+                      <div class="bo-main--rank-button-like-heart"><img class="bo-main--rank-button-like-heart-img" src="./../img/bo-img/ico-heart-toggle-main.png" ></div>
+                      851
+                    </button>
+                    <button class="bo-main--rank-button-reserve">
+                      예매
+                    </button>
                   </div>
                 </span>
               </li>
@@ -400,16 +412,29 @@
           <div>
             <ul class="bo-main--menu-container">
               <li class="bo-main--menu">
-                검색
+                <div class="bo-main--menu-input-cell">
+                  <input placeholder="영화명을 입력해 주세요">
+                  <div><img src="./../img/bo-img/ico-search-white.png"></div>
+                  
+                </div>
               </li>
               <li class="bo-main--menu">
-                상영시간표
+                <div class="bo-main--menu-cell">
+                  <img class="bo-main--menu-cell-icon" src="./../img/bo-img/ico-schedule-main.png">
+                  상영시간표
+                </div>
               </li>
               <li class="bo-main--menu">
-                박스오피스
+                <div class="bo-main--menu-cell">
+                  <img class="bo-main--menu-cell-icon" src="./../img/bo-img/ico-boxoffice-main.png">
+                  상영시간표
+                </div>
               </li>
               <li class="bo-main--menu">
-                빠른 예매
+                <div class="bo-main--menu-cell">
+                  <img class="bo-main--menu-cell-icon" src="./../img/bo-img/ico-quick-reserve-main.png">
+                  상영시간표
+                </div>
               </li>
             </ul>
           </div>
@@ -421,11 +446,11 @@
     </div>
     <div class="section--curation">
       <div class="div--panel">
-        <div style="height: 123px;">
+        <div>
           <!-- 헤드 -->
           <div class="cu-title-head">
-            <p style="font-size: 25px;">큐레이션</p>
-            <a href="#"><span>큐레이션 더보기</span><span> +</span></a>
+            <p class="cu-title">큐레이션</p>
+            <a href="#"><span class="cu-title-other">큐레이션 더보기</span><img src="./../img/curation-img/ico-more-cross-gray.png"></a>
           </div>
           <!-- 필름 소사어티 -->
           <div class="cu-fs">
@@ -433,82 +458,81 @@
             <div class="cu-flag-img">
               <img src="./../img/curation-img/bg-bage-curation-film.png">
             </div>
-            <ul>
+            <ul class="cu-fs--ul">
               <li>
-                <span style="background-color: blue; display: flex; ">
-                  <div style="background-color: brown; width: fit-content;">
-                    <img src="./../img/curation-img/moving_poster.jpg" style="width: 300px; height:430px;">
-                    <div style="width: 100%; background-color: aqua; display: block;">
-                      <span>
-                        상세정보
-                      </span>
-                      <span>
-                        예매
-                      </span>
-                    </div>
+                <div class="cu-fs--page">
+                  <img class="cu-fs--page-img" src="./../img/curation-img/moving_poster.jpg">
+                  <div class="cu-fs--button-container">
+                    <button class="cu-fs--info-button">
+                      상세정보
+                    </button>
+                    <button class="cu-fs--reserve-button">
+                      예매
+                    </button>
                   </div>
-                </span>
+                </div>
               </li>
-              <li style="flex: 1; background-color: antiquewhite;">
-                <span style="flex: 1; background-color: aqua;">
-                  <div style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
-                    <p>#필름소사이어티</p>
-                    <p style="font-size: 30px;">이사</p>
-                    <p>화목한 가정을 자부하던 6학년 소녀 렌</p>
-                    <br>
-                    <p>어느 날 아빠가 집을 나가고 엄마가 이혼을 선언했다.</p>
-                    <p>"나는 엄마 아빠가 싸워도 참았어</p>
-                    <p>근데 왜 엄마 아빠는 못 참는 거야?"</p>
-                    <br>
-                    <p>엄마가 만든 '둘을 위한 계약서'도 싫고</p>
-                    <ul class="cu-fs--film--container">
-                      <li style="position: relative;">
-                        <div style="position:absolute; top:-5px; left: 10px; background-color: yellow;">
+              <li class="cu-fs--pad">
+                <!-- 간격 띄우기용 요소 -->
+              </li>
+              <li class="cu-fs--introduce">
+                <div class="cu-fs--head">
+                  <p class="cu-fs--head-upper-text">#필름소사이어티</p>
+                  <p class="cu-fs--head-bigger-text">이사</p>
+                  <br>
+                  <p class="cu-fs--head-bottom-line-box"></p>
+                  <p class="cu-fs--head-p-with-margin">화목한 가정을 자부하던 6학년 소녀 렌</p>
+                  <p class="cu-fs--head-p-with-margin">어느 날 아빠가 집을 나가고 엄마가 이혼을 선언했다.</p>
+                  <p>"나는 엄마 아빠가 싸워도 참았어</p>
+                  <p class="cu-fs--head-p-with-margin">근데 왜 엄마 아빠는 못 참는 거야?"</p>
+                  <p>엄마가 만든 '둘을 위한 계약서'도 싫고</p>
+                  <ul class="cu-fs--film--container">
+                    <li class="cu-fs--film">
+                      <a class="cu-fs--film-frame" href="https://www.megabox.co.kr/movie-detail?rpstMovieNo=25042400">
+                        <img class="cu-fs--film-frame-poster" src="./../img/curation-img/f_m.jpg">
+                        <div class="cu-fs--film-frame-title">
+                          미세리코르디아
+                        </div>
+                        <div class="cu-fs--film-flag">
                           <img src="./../img/curation-img/bg-bage-curation-film-m.png">
                         </div>
-                        <span>
-                          <img src="./../img/curation-img/f_m.jpg" style="width: 170px; height: 244px;">
-                          <div style="text-align: center;">
-                            제목
-                          </div>
-                        </span>
-                      </li>
-                      <li style="position: relative;">
-                        <div style="position:absolute; top:-5px; left: 10px; background-color: yellow;">
+                      </a>
+                    </li>
+                    <li class="cu-fs--film">
+                      <a class="cu-fs--film-frame" href="https://www.megabox.co.kr/movie-detail?rpstMovieNo=25031500">
+                        <img class="cu-fs--film-frame-poster" src="./../img/curation-img/f_s.jpg">
+                        <div class="cu-fs--film-frame-title">
+                          스왈로우테일 버터플라이
+                        </div>
+                        <div class="cu-fs--film-flag">
                           <img src="./../img/curation-img/bg-bage-curation-film-m.png">
                         </div>
-                        <span>
-                          <img src="./../img/curation-img/f_s.jpg" style="width: 170px; height: 244px;">
-                          <div style="text-align: center;">
-                            제목
-                          </div>
-                        </span>
-                      </li>
-                      <li style="position: relative;">
-                        <div style="position:absolute; top:-5px; left: 10px; background-color: yellow;">
+                      </a>
+                    </li>
+                    <li class="cu-fs--film">
+                      <a class="cu-fs--film-frame" href="https://www.megabox.co.kr/movie-detail?rpstMovieNo=25044600">
+                        <img class="cu-fs--film-frame-poster" src="./../img/curation-img/f_v.jpg">
+                        <div class="cu-fs--film-frame-title">
+                          반 고흐. 밀밭과 구름 낀 하늘
+                        </div>
+                        <div class="cu-fs--film-flag">
                           <img src="./../img/curation-img/bg-bage-curation-film-m.png">
                         </div>
-                        <span>
-                          <img src="./../img/curation-img/f_v.jpg" style="width: 170px; height: 244px;">
-                          <div style="text-align: center;">
-                            제목
-                          </div>
-                        </span>
-                      </li>
-                      <li style="position: relative;">
-                        <div style="position:absolute; top:-5px; left: 10px; background-color: yellow;">
+                      </a>
+                    </li>
+                    <li class="cu-fs--film">
+                      <a class="cu-fs--film-frame" href="https://www.megabox.co.kr/movie-detail?rpstMovieNo=25035200">
+                        <img class="cu-fs--film-frame-poster" src="./../img/curation-img/f_b.jpg">
+                        <div class="cu-fs--film-frame-title">
+                          발코니의 여자들
+                        </div>
+                        <div class="cu-fs--film-flag">
                           <img src="./../img/curation-img/bg-bage-curation-film-m.png">
                         </div>
-                        <span>
-                          <img src="./../img/curation-img/f_b.jpg" style="width: 170px; height: 244px;">
-                          <div style="text-align: center;">
-                            제목
-                          </div>
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>          
               </li>
             </ul>
           </div>
@@ -518,12 +542,11 @@
     <section class="section--mega-info">
       <div class="div--panel">
         <!-- 헤드 -->
-        <div style="margin-top: 79px; background-color:crimson; ">
-          <p style="font-size: 25px;">메가박스 안내</p>
+        <div class="mi-head">
+          <p class="mi-head-title">메가박스 안내</p>
         </div>
-        <div style="position: relative; display:flex; justify-content:center;"> <!--의미 없는 div 시작-->
-          <div
-            style=" position:absolute; width:1190px; height:170px; background-color:black; display:flex; justify-content:space-between; align-items: center;">
+        <div class="mi-main">
+          <div class="mi-main--introduce-arrow-container">
             <a href="#">
               <img src="./../img/info-img/btn-specialtheater-prev.png">
             </a>
@@ -534,7 +557,7 @@
           <ul class="mi-main--introduce-container">
             <li>
               <div class="introduce">
-                <img class="introduce-img" src="./../img/info-img/bg-main-boutiq.png">
+                <a href="#"><img class="introduce-img" src="./../img/info-img/bg-main-boutiq.png"></a>
               </div>
             </li>
             <li>
@@ -573,76 +596,71 @@
               </div>
             </li>
           </ul>
-        </div> <!--의미 없는 div 끝-->
+        </div> 
         <div class="info-notice">
-          <div>
-            <a href="#">
-              메가박스
-            </a>
-            <a href="#">
-              [공지] 2025년 발레리나 빵원티켓플러스 일정 변경 안내
+          <div class="info-notice-head">
+            <div class="info-notice-head-location">
+              <p class="info-notice-head-location-line">지점</p>
+            </div>
+            <a href="#" class="info-notice-head-location-deco">
+                <p class="info-notice-head-location-event">[인천학익(시티오씨엘)] [인천학익] 메가 원데이 패스 행사 일정 변경 안내</p>
             </a>
           </div>
           <div>
-            <a href="#">
-              날짜
+            <a class="info-notice-head-calendar" href="#">
+              2025.07.28
             </a>
-            <a href="#">
+            <a class="info-notice-head-more" href="#">
               더보기
+              <img src="./../img/info-img/ico-arr-right-gray.png">
             </a>
           </div>
         </div>
         <div> <!--의미 없는 div 시작-->
           <ul class="info--ask-containter">
-            <li class="ask">
-              <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;"
-                href="#">
-                <div style="justify-content: center; display: flex;">
+            <li class="info--ask">
+              <a class="info--ask-a" href="#">
+                <div class="info--ask-img-box">
+                  <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
+                </div>
+                고객센터
+              </a>
+            </li>
+            <li class="info--ask">
+              <a class="info--ask-a" href="#">
+                <div class="info--ask-img-box">
                   <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
                 </div>
                 자주 묻는 질문
               </a>
             </li>
-            <li class="ask">
-              <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;"
-                href="#">
-                <div style="justify-content: center; display: flex;">
+            <li class="info--ask">
+              <a class="info--ask-a" href="#">
+                <div class="info--ask-img-box">
                   <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
                 </div>
                 자주 묻는 질문
               </a>
             </li>
-            <li class="ask">
-              <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;"
-                href="#">
-                <div style="justify-content: center; display: flex;">
+            <li class="info--ask">
+              <a class="info--ask-a" href="#">
+                <div class="info--ask-img-box">
                   <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
                 </div>
                 자주 묻는 질문
               </a>
             </li>
-            <li class="ask">
-              <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;"
-                href="#">
-                <div style="justify-content: center; display: flex;">
+            <li class="info--ask">
+              <a class="info--ask-a" href="#">
+                <div class="info--ask-img-box">
                   <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
                 </div>
                 자주 묻는 질문
               </a>
             </li>
-            <li class="ask">
-              <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;"
-                href="#">
-                <div style="justify-content: center; display: flex;">
-                  <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
-                </div>
-                자주 묻는 질문
-              </a>
-            </li>
-            <li class="ask">
-              <a style="background-color: bisque; align-content: center; flex-direction: column; display: flex; justify-content: center;"
-                href="#">
-                <div style="justify-content: center; display: flex;">
+            <li class="info--ask">
+              <a class="info--ask-a" href="#">
+                <div class="info--ask-img-box">
                   <img class="ask-img" src="./../img/ask-img/ico-main-customer.png">
                 </div>
                 자주 묻는 질문
@@ -653,53 +671,212 @@
       </div>
     </section>
   </main>
-  <footer style="position: relative; display:flex; justify-content:center">
+  <footer class="section--footer">
     <div class="section--search-theatre">
       <div class="div--panel--site-map">
         <div class="cu-title-head">
-          <p style="font-size: 25px;">매가박스 극장 찾기</p>
+          <p class="footer-head-title">매가박스 극장 찾기</p>
           <span><img src="./../img/footer-icon-img/btn-footer-theater-close.png"></span>
         </div>
         <ul>
-          <li style="display: flex;">
-            <div style="width: 153px;">
-              <p>
+          <li class="search-theatre-item">
+            <div>
+              <p class="search-theatre-area">
                 서울
               </p>
             </div>
-            <div class="cccc">
-
-              <ul>
-<li><a>강남</a></li>
-<li><a>강동</a></li>
-<li><a>구의이스트폴</a></li>
-<li><a>군자</a></li>
-<li><a>더부티크목동현대백화점</a></li>
-<li><a>동대문</a></li>
-<li><a>마곡</a></li>
-<li><a>목동</a></li>
-<li><a>상봉</a></li>
-<li><a>상암월드컵경기장</a></li>
-<li><a>성수</a></li>
-<li><a>센트럴</a></li>
-<li><a>송파파크하비오</a></li>
-<li><a>신촌</a></li>
-<li><a>이수</a></li>
-<li><a>창동</a></li>
-<li><a>코엑스</a></li>
-<li><a>홍대</a></li>
-<li><a>화곡</a></li>
-<li><a>ARTNINE</a></li>
-
-              </ul>
-
+            <div class="site-map--region-link">
+              <a href="https://www.megabox.co.kr/theater?brchNo=1372">강남</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1341">강동</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0090">구의이스트폴</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1431">군자</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0041">더부티크목동현대백화점</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0073">동대문</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1572">마곡</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1581">목동</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1311">상봉</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1211">상암월드컵경기장</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1331">성수</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1371">센트럴</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1381">송파파크하비오</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1202">신촌</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1561">이수</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1321">창동</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1351">코엑스</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1212">홍대</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0083">화곡</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=1562">ARTNINE</a>
+            </div>
+          </li>
+          <li class="search-theatre-item">
+            <div>
+              <p class="search-theatre-area">
+                경기
+              </p>
+            </div>
+            <div class="site-map--region-link">
+              <a href="https://www.megabox.co.kr/theater?brchNo=4121">고양스타필드</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0029">광명AK플라자</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0053">광명소하</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0035">금정AK플라자</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4152">김포한강신도시</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0039">남양주</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0019">남양주현대아울렛스페이스원</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4451">동탄</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0089">동탄역</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0084">미사강변(하남종합운동장) </a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4104">백석벨라시타</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4722">별내</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4221">부천스타필드시티</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4631">분당</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0086">성남모란</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0051">수원</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0052">수원AK플라자(수원역)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0042">수원남문</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0062">수원스타필드</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0060">수원인계</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0036">수원호매실</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4291">시흥배곧</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0088">시흥정왕</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4253">안산중앙</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0020">안성스타필드</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4821">양주(휴관)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4462">용인테크노밸리</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0070">의정부민락</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4112">킨텍스</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4132">파주금촌</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4115">파주운정</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0064">평택비전</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4651">하남스타필드</a>
+            </div>
+          </li>
+          <li class="search-theatre-item">
+            <div>
+              <p class="search-theatre-area">
+                인천
+              </p>
+            </div>
+            <div class="site-map--region-link">
+              <a href="https://www.megabox.co.kr/theater?brchNo=4041">검단 </a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4062">송도(트리플스트리트)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4001">영종 </a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0080">영종하늘도시</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=4051">인천논현</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0085">인천학익(시티오씨엘) </a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0027">청라지젤(휴관)</a>
+            </div>
+          </li>
+          <li class="search-theatre-item">
+            <div>
+              <p class="search-theatre-area">
+                대전/충청/세종
+              </p>
+            </div>
+            <div class="site-map--region-link">
+              <a href="https://www.megabox.co.kr/theater?brchNo=3141">공주 </a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=3141">논산 </a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=3021">대전</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0028">대전신세계아트앤사이언스</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0009">대전유성</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=3011">대전중앙로</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0017">대전현대아울렛</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=3391">세종(조치원)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=3392">세종나성</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0008">세종청사</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=3631">오창</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=3651">진천</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0056">천안</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0049">청주사창 </a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0069">청주성안길 </a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0068">충주연수</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=3501">홍성내포</a>
+            </div>
+          </li>
+          <li class="search-theatre-item">
+            <div>
+              <p class="search-theatre-area">
+                부산/대구/경상
+              </p>
+            </div>
+            <div class="site-map--region-link">
+              <a href="https://www.megabox.co.kr/theater?brchNo=0040">경북도청</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=7122">경산하양</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=7303">구미강동</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=7401">김천</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0074">남포항</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0067">대구세븐밸리(칠곡)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=7011">대구신세계(동대구)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0022">대구이시아</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0072">대구프리미엄만경관</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=6161">덕천</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0076">마산(경남대)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=7451">문경</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=6001">부산극장</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0061">부산대</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0025">북대구(칠곡)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0032">사상</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=6642">삼천포</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0082">서면대한</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0063">양산</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=6262">양산증산</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0057">울산</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=6191">정관(휴관)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0045">진주(중안)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0048">창원</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0014">창원내서</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0038">포항</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0079">해운대(장산)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0087">화명</a>
+            </div>
+          </li>
+          <li class="search-theatre-item">
+            <div>
+              <p class="search-theatre-area">
+                광주/전라
+              </p>
+            </div>
+            <div class="site-map--region-link">
+              <a href="https://www.megabox.co.kr/theater?brchNo=5021">광주상무</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=5061">광주하남</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=5302">목포하당(포르모)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=5401">순천</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=5552">여수웅천</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0010">전대(광주)</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0050">전주객사</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0021">전주혁신</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=5064">첨단</a>
+            </div>
+          </li>
+          <li class="search-theatre-item">
+            <div>
+              <p class="search-theatre-area">
+                강원
+              </p>
+            </div>
+            <div class="site-map--region-link">
+              <a href="https://www.megabox.co.kr/theater?brchNo=2001">남춘천 </a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=2171">속초</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=2202">원주혁신</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0037">춘천석사</a>
+            </div>
+          </li>
+          <li class="search-theatre-item">
+            <div>
+              <p class="search-theatre-area">
+                제주
+              </p>
+            </div>
+            <div class="site-map--region-link">
+              <a href="https://www.megabox.co.kr/theater?brchNo=0059">제주삼화</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0054">제주서귀포</a>
+              <a href="https://www.megabox.co.kr/theater?brchNo=0066">제주아라</a>
             </div>
           </li>
         </ul>
       </div>
     </div>
     <div class="div--panel">
-      <div class="info-notice">
+      <div class="footer-notice">
         <div>
           <a href="#">
             회사소개
@@ -728,7 +905,10 @@
         </div>
         <div>
           <a href="#">
-            극장 찾기
+            <div class="footer-search-theatre">
+              <img class="footer-search-theatre-icon" src="./../img/footer-icon-img/ico-footer-search.png">
+              극장 찾기
+            </div>
           </a>
         </div>
       </div>
@@ -736,8 +916,8 @@
         <div>
           <img src="./../img/footer-icon-img/logo-opacity_new2.png">
         </div>
-        <div>
-          <div style="display: inline-block;">
+        <div class="footer--real-footer">
+          <div class="footer--real-footer-line">
             <p>
               서울특별시 강남구 테헤란로 87길 22 도심공항터미널 건물 408호
             </p>
@@ -745,7 +925,7 @@
               ARS 1544-0070 대표이메일 m.dreamcenter@partner.megabox.co.kr
             </p>
           </div>
-          <div>
+          <div class="footer--real-footer-line">
             <p>
               대표자명 홍정인, 남용석
             </p>
@@ -758,12 +938,15 @@
             <p>
               · 통신판매업신고번호 2025-서울강남-00722
             </p>
+          </div class="footer--real-footer-line">
+          <div>
+            <p>
+              COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            </p>
           </div>
-          <p style="font-size: 10px;">
-            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
-          </p>
+          
         </div>
-        <div style="display: flex;height: fit-content;">
+        <div class="footer-sns-icon-container">
           <a href="#">
             <img src="./../img/footer-icon-img/ico-youtubeN.png">
           </a>
