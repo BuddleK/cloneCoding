@@ -1,13 +1,16 @@
 *{
   margin:0;
   padding:0;
-  border:1px solid black;
   color:white;
+}
+body{
+  
+  background-color: #222;
 }
 /* 헤더 */
 header{
   height:45px;
-  background-color:darkred;
+  background-color: #222;
 }
 .header-logo-img{
   position:absolute;
@@ -42,8 +45,6 @@ header{
   width:1100px;
   height:100%;
   margin:auto;
-  background-color:darkgray;
-  opacity:0.5;
   display:flex;
   position:relative;
   justify-content:center;
@@ -56,8 +57,6 @@ header{
   width:1100px;
   height:100%;
   margin:auto;
-  background-color:darkgray;
-  opacity:0.5;
   display:flex;
   justify-content:space-between;
 }
@@ -71,6 +70,7 @@ header{
 }
 .nav-go a{
   margin: 0px 25px;
+  color:white;
 }
 .nav--icon-list{
   display:flex;align-items:center;
@@ -82,10 +82,31 @@ header{
   justify-content:center;
   align-items:center;
 }
+.site-map--bucket{
+  width: 100%; display:flex;justify-content:center;background-color:black;
+}
+.site-map--blanket{
+  width: 1100px; position:relative;
+}
+.site-map--switch{
+  width: 38px;
+  height:50px;
+  position:absolute;
+  z-index:2;
+  top:-40px;
+}
+.site-map--switch:hover{
+}
+.site-map--switch:hover+.section--site-map{
+  display: block;
+}
+.section--site-map:hover{
+  display: block;
+}
+
 /* cu - 큐레이션 */
 .cu-title-head{
   margin-top:42px;
-  background-color:crimson;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -100,21 +121,18 @@ header{
 .cu-fs{
   display:flex;
   position:relative;
-  background-color:black;
 }
 .cu-flag-img{
   position:absolute;
   top:-10px;
-  background-color:yellow;
 }
 .cu-fs--ul{
   display:flex;
   flex:1;
   justify-content:space-between;
-  background-color:brown;
 }
 .cu-fs--page{
-  background-color: brown; width: fit-content; margin-left: 10px;
+  width: fit-content; margin-left: 10px;
 }
 .cu-fs--page-img{
   width: 300px; height:430px; border-radius: 15px;
@@ -122,7 +140,6 @@ header{
 
 .cu-fs--button-container{
   width: 100%;
-  background-color: crimson;
   display: flex;
   justify-content: space-between;
 }
@@ -155,10 +172,10 @@ header{
   width: 45px;
 }
 .cu-fs--introduce{
-  flex: 1; background-color: antiquewhite; 
+  flex: 1;
 }
 .cu-fs--head{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); background-color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
 .cu-fs--head-upper-text{
   font-size: 19px !important;
@@ -197,25 +214,22 @@ header{
   border-radius: 10px;
 }
 .cu-fs--film-frame-title{
-  position: absolute; width: 200px; text-align: center; top: 252px; background-color: crimson;
+  position: absolute; width: 200px; text-align: center; top: 252px; 
   font-size: 15px;
 }
 .cu-fs--film-flag{
-  position:absolute;top:-5px;left:10px;background-color:yellow;
+  position:absolute;top:-5px;left:10px;
 }
 /* 박스오피스 */
 .section--box-office{
   height:830px;
-  background-color:darkslategray;
+  background-color: #222;
 }
 .bo--head{
   margin-top: 79px;
   margin-bottom: 10px;
-  background-color:crimson;
 }
 .bo--head-title{
-  background-color:aqua;
-  opacity:0.3;
   position:absolute;
   width:1100px;
   display:flex;
@@ -223,10 +237,9 @@ header{
   height: 30px;
 }
 .bo--head-title button{
-  color: #fff;
   height: 100%;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   vertical-align:text-top;
+  background-color:black;
 }
 .bo--head-other{
   display: flex; justify-content: end;
@@ -244,9 +257,12 @@ header{
   height:352px;
   border-radius: 5px;
 }
+.bo-main--rank-poster:hover{
+ opacity: 0.5;
+
+}
 .bo-main--rank-button-container{
   width: 100%;
-  background-color: black;
   display: flex;
   justify-content: space-between;
 }
@@ -286,7 +302,7 @@ header{
   height: 75px;
   margin-top: 10px;
   margin-bottom: 30px;
-  background-color:crimson;
+  background-color: #0c0808fd;
 }
 .bo-main--menu{
   flex:1;
@@ -323,16 +339,17 @@ header{
 }
 /* 메가박스 인포 */
 .mi-head{
-  margin-top: 40px; background-color:crimson; margin-bottom: 40px;
+  margin-top: 40px; margin-bottom: 40px;
 }
 .mi-head-title{
   font-size: 27px;
+  color: #252451;
 }
 .mi-main{
   position: relative; display:flex; justify-content:center;
 }
 .mi-main--introduce-arrow-container{
-  position:absolute; width:1190px; height:170px; background-color:black; display:flex; justify-content:space-between; align-items: center;
+  position:absolute; width:1190px; height:170px; display:flex; justify-content:space-between; align-items: center;
 }
 .mi-main--introduce-container{
   display: none;
@@ -361,12 +378,12 @@ header{
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-top:1px solid rgba(255, 255, 255, 0.2);
   margin-top:50px;
-  background-color:crimson;
   display:flex;
   justify-content:space-between;
   align-items:center;
   height: 60px;
   margin-bottom: 50px;
+  
 }
 .info-notice-head{
   display: flex;
@@ -376,18 +393,22 @@ header{
 }
 .info-notice-head-location-line{
   border-right: 1px solid rgba(255, 255, 255, 0.2); font-size: 15px;
+  color: #252451;
 }
 .info-notice-head-location-deco{
   text-decoration: none;
 }
 .info-notice-head-location-event{
   font-size: 15px;
+  color: #252451;
 }
 .info-notice-head-calendar{
   margin-right: 7px;text-decoration: none;
+  color: #252451;
 }
 .info-notice-head-more{
   padding-left: 7px; text-decoration: none;
+  color: #252451;
 }
 /* 고객문의 */
 .info--ask-containter{
@@ -397,7 +418,6 @@ header{
   justify-content:space-around;
 }
 .info--ask{
-  background-color:aquamarine;
   display:flex;
   justify-content:center;
   font-size: 15px;
@@ -408,7 +428,6 @@ header{
   color: #222;
   /* font-weight: lighter; */
   text-decoration-line:none;
-  background-color:bisque;
   align-content:center;
   flex-direction:column;
   display:flex;
@@ -422,27 +441,46 @@ header{
   justify-content: center; display: flex;
 }
 .ask-img{
-  background-color:black;
 }
 /* 푸터 */
 .section--footer{
-  position: relative; display:flex; justify-content:center;
+  position: relative; display:flex; justify-content:center;width: 100%;
 }
-/* 안됨!! */
+
+.search-theatre--switch{
+  top:15%; position: absolute; width: 1070px; height:50px; 
+}
+
+
+.search-theatre--switch:hover+.section--search-theatre{
+  display: block;
+}
+.section--search-theatre:hover{
+  display: block;
+}
+
 .section--search-theatre{
   height:746px;
   width:100%;
-  background-color: black;
-  display: block;
-  /* display:none; */
+  /* display: block; */
+  display:none;
   position:absolute;
   top:-375%;
+  left:0;
+  background-color: #222;
+}
+
+.search-theatre--panel{
+  width:1100px;
+  height:100%;
+  margin:auto;
 }
 .footer-head-title{
   font-size: 25px;
 }
 .search-theatre-item{
   display: flex;
+  margin-bottom: 42px;
 }
 .search-theatre-area{
   width: 153px;
@@ -450,7 +488,6 @@ header{
 .footer-notice{
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-top:1px solid rgba(255, 255, 255, 0.2);
-  background-color:crimson;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -459,7 +496,6 @@ header{
 .footer-search-theatre{
   color: #666;
   display: flex;
-  background-color: wheat;
   padding: 4px 14px;
   border-radius: 13px;
 }
@@ -496,33 +532,30 @@ header{
   width:1100px;
   height:100%;
   margin:auto;
-  background-color:darkgray;
-  opacity:0.5;
 }
 .section--curation{
   height:830px;
-  background-color:indigo;
+  background-color: #252451;
 }
 .section--mega-info{
   height:630px;
-  background-color:dimgray;
+  background-color: white;
 }
 .add{
   /* 광고 */
   height:80px;
-  background-color:aquamarine;
   color:black;
   text-align:center;
 }
 nav{
   height:45px;
-  background-color:darkslateblue;
+  background-color: #222;
+  border-bottom: 1px solid #666;
 }
 main{
-  background-color:black;
+  background-color:white;
 }
 span{
-  background-color:darkolivegreen;
 }
 
 li{
@@ -530,21 +563,24 @@ li{
 }
 footer{
   height:200px;
-  background-color:darkolivegreen;
 }
 
 /* 사이트맵 */
 .section--site-map{
+  width: 1100px;
   height:750px;
-  background-color:black;
   /* display:block; */
   display: none;
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+  margin:auto;
+  background-color: #222;
 }
 .site-map--panel{
   width:1100px;
   height:100%;
   margin:auto;
-  background-color:aqua;
 }
 .site-map--title{
   font-size: 22px;
@@ -562,14 +598,13 @@ footer{
   width: 159px;
 }
 .site-map--ul li p{
-  color: black;
+  color: white;
   text-align: center;
 }
 .site-map--ul li div div{
   width: 159px;
   position: absolute;
   display: flex;
-  background-color: black;
   flex-direction: column;
   align-items: center;
 }
@@ -580,3 +615,4 @@ footer{
   display: flex;
   flex-wrap: wrap;
 }
+
