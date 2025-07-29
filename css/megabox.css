@@ -113,6 +113,7 @@ header{
   margin-bottom: 30px;
 }
 .cu-title{
+  margin-top: 40px;
   font-size: 30px;
 }
 .cu-title-other{
@@ -536,6 +537,7 @@ header{
 .section--curation{
   height:830px;
   background-color: #252451;
+  transform: translateY(-90px);
 }
 .section--mega-info{
   height:630px;
